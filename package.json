@@ -1,0 +1,39 @@
+{
+  "name": "js-conciseness-analyzer",
+  "publisher": "ZidaneZahran",
+  "displayName": "JS Conciseness Analyzer",
+  "description": "Analyze JavaScript conciseness using Halstead metrics",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/repository"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "main": "./src/extension.js",
+  "activationEvents": [
+    "onCommand:jsAnalyzer.runAnalysis",
+    "onCommand:jsAnalyzer.runWorkspaceAnalysis"
+  ],
+"contributes": {
+  "commands": [
+    {
+      "command": "jsAnalyzer.runAnalysis",
+      "title": "JS Analyzer: Open Main Menu"
+    },
+    {
+      "command": "jsAnalyzer.runWorkspaceAnalysis",
+      "title": "JS Analyzer: Run Bulk Analysis Directly"
+    }
+  ]
+},
+  "dependencies": {
+    "acorn": "^8.11.3"
+  },
+  "devDependencies": {
+    "vscode": "^1.1.37"
+  }
+}
+
