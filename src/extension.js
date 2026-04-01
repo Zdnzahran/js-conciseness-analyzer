@@ -47,7 +47,7 @@ function activate(context) {
 
                     results.push({ fileName, loc, complexity, halstead });
                 } catch (err) {
-                    ignoredFiles.push({ fileName, reason: `Gagal diproses (Syntax Error)` });
+                    ignoredFiles.push({ fileName, reason: `Error: ${err.message}` });
                 }
                 progress.report({ increment: (1 / allFiles.length) * 100 });
             }

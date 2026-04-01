@@ -3,11 +3,11 @@
   "publisher": "ZidaneZahran",
   "displayName": "JS Conciseness Analyzer",
   "description": "Analyze JavaScript conciseness using Halstead metrics",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/username/repository"
+    "url": "https://github.com/Zdnzahran/js-conciseness-analyzer"
   },
   "engines": {
     "vscode": "^1.80.0"
