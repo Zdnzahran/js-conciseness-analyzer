@@ -13,16 +13,20 @@ function calculateHalstead(operators, operands) {
     const totalOperators = safeSum(operators);
     const totalOperands = safeSum(operands);
 
+    //Hitung Vocabulary
     const vocabulary = uniqueOperators + uniqueOperands;
 
+    //Hitung Length
     const length = totalOperators + totalOperands;
 
+    //Hitung Estimated Length
     const estimatedLength =
         (uniqueOperators * Math.log2(uniqueOperators || 1)) +
         (uniqueOperands * Math.log2(uniqueOperands || 1));
 
     const diffRatio = Math.abs(estimatedLength - length) / (length || 1);
 
+    //Hitung skor Kepadatan Kode
     let hlc;
     if (diffRatio > 1) {
         hlc = 0;
