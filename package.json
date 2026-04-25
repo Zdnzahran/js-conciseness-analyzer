@@ -2,7 +2,7 @@
   "name": "js-conciseness-analyzer",
   "displayName": "JS Conciseness Analyzer",
   "description": "Analyze your JavaScript code for conciseness and complexity using Halstead Metrics.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "SahabatSapi",
   "icon": "icon.ico",
   "scripts": {

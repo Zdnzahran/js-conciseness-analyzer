@@ -4,7 +4,7 @@ Semua perubahan penting pada ekstensi **JS Conciseness Analyzer** akan didokumen
 
 Format pencatatan ini didasarkan pada standar [Keep a Changelog](https://keepachangelog.com/), dan proyek ini mematuhi [Semantic Versioning](https://semver.org/).
 
-## [1.0.0] - 2026-04-25
+## [1.0.1] - 2026-04-25
 
 ### Ditambahkan
 - **Analisis File Aktif**           : Fitur untuk menghitung metrik Halstead pada file JavaScript yang sedang terbuka di editor (`Analyze Active File`).
@@ -16,3 +16,8 @@ Format pencatatan ini didasarkan pada standar [Keep a Changelog](https://keepach
 
 ### Diperbaiki
 - Penyesuaian pengecualian node dan token agar sesuai dengan standar pengukuran kualitas internal perangkat lunak.
+
+## [1.0.2] - 2026-04-25
+
+### Ditambahkan
+- **Manambahkan Icon Ekstensi**
