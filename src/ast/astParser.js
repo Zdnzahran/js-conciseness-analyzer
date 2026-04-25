@@ -4,7 +4,8 @@ function parseAST(code) {
     const options = {
         ecmaVersion: "latest",
         allowReturnOutsideFunction: true,
-        allowImportExportEverywhere: true // Sangat penting untuk file JS modern
+        allowImportExportEverywhere: true,
+        locations: true // Mengaktifkan pelacakan baris/kolom pada AST
     };
 
     try {
@@ -15,8 +16,14 @@ function parseAST(code) {
         try {
             return acorn.parse(code, { ...options, sourceType: "script" });
         } catch (scriptErr) {
-            // Jika keduanya gagal, baru lempar error asli
-            throw new Error(`Gagal parsing AST: ${scriptErr.message}`);
+            // Menangkap informasi lokasi error dari Acorn (jika ada)
+            const line = scriptErr.loc ? scriptErr.loc.line : '?';
+            const column = scriptErr.loc ? scriptErr.loc.column : '?';
+            
+            // Membersihkan pesan asli dari Acorn yang kadang mencantumkan angka posisi ganda
+            const cleanMessage = scriptErr.message.replace(/\s*\(\d+:\d+\)$/, '');
+
+            throw new Error(`Kesalahan sintaks di Baris ${line}, Kolom ${column}. Detail: ${cleanMessage}`);
         }
     }
 }
