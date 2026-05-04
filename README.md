@@ -1,4 +1,4 @@
-# JS Conciseness Analyzer
+# JavaScript Conciseness Analyzer
 
 **JS Conciseness Analyzer** is a Visual Studio Code extension designed to help developers measure internal software quality through code density analysis using **McCall Software Quality Factor**.
 
@@ -35,7 +35,7 @@ This extension utilizes the [Acorn](https://github.com/acornjs/acorn) library fo
 
 ## Project Information
 
-* **Version**: 0.0.2
+* **Version**: 1.0.3
 * **Publisher**: SahabatSapi
 * **Categories**: Programming Languages, Linters, Static Analysis
 

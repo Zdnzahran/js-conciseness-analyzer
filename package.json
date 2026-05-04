@@ -1,10 +1,11 @@
 {
   "name": "js-conciseness-analyzer",
-  "displayName": "JS Conciseness Analyzer",
+  "displayName": "JavaScript Conciseness Analyzer",
   "description": "Analyze your JavaScript code for conciseness and complexity using Halstead Metrics.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "SahabatSapi",
-  "icon": "icon.ico",
+  "license": "MIT",
+  "icon": "icon.png",
   "scripts": {
     "test": "mocha test/**/*.test.js"
   },

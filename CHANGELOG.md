@@ -21,3 +21,7 @@ Format pencatatan ini didasarkan pada standar [Keep a Changelog](https://keepach
 
 ### Ditambahkan
 - **Manambahkan Icon Ekstensi**
+
+## [1.0.3] - 2026-05-04
+### Diperbaiki
+- Menambahkan file `LICENSE` (MIT) yang diwajibkan oleh VS Code Marketplace.
