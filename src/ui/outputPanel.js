@@ -22,13 +22,9 @@ function showSingleFileMetrics(fileName, loc, complexity, halstead) {
     outputChannel.appendLine(`- Total Operands (N2)   : ${halstead.N2}`);
     outputChannel.appendLine("");
     outputChannel.appendLine("3. HASIL PERHITUNGAN");
-    outputChannel.appendLine(`- Vocabulary (n)        : ${halstead.vocabulary}`);
     outputChannel.appendLine(`- Length (N)            : ${halstead.length}`);
-    
-    // Membatasi Estimated Length jadi 2 desimal agar rapi
-    outputChannel.appendLine(`- Estimated Length (^N) : ${Number(halstead.estimatedLength).toFixed(2)}`);
-    
-    // Membatasi HLC menjadi 4 angka di belakang koma
+    outputChannel.appendLine(`- Estimated Length (^N) : ${Number(halstead.estimatedLength).toFixed(2)}`);    
+    outputChannel.appendLine("==================================================");
     outputChannel.appendLine(`- CONCISENESS SCORE     : ${Number(halstead.hlc).toFixed(4)}`);
     outputChannel.appendLine("==================================================");
 }

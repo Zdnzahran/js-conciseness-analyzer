@@ -7,29 +7,28 @@ function analyzeComplexity(ast) {
     traverseAST(ast, node => {
 
         switch (node.type) {
-
             case "IfStatement":
             case "ForStatement":
+            case "ForInStatement":  
+            case "ForOfStatement":  
             case "WhileStatement":
             case "DoWhileStatement":
             case "CatchClause":
-                decisionPoints++;
-                break;
-
-            case "SwitchCase":
-                decisionPoints++;
-                break;
-
             case "ConditionalExpression":
                 decisionPoints++;
                 break;
 
-            case "LogicalExpression":
+            case "SwitchCase":
+                //AGAR 'default:' TIDAK DIHITUNG
+                if (node.test !== null) { 
+                    decisionPoints++;
+                }
+                break;
 
+            case "LogicalExpression":
                 if (node.operator === "&&" || node.operator === "||") {
                     decisionPoints++;
                 }
-
                 break;
 
         }

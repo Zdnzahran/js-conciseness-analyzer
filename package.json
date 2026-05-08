@@ -5,7 +5,7 @@
   "version": "1.0.3",
   "publisher": "SahabatSapi",
   "license": "MIT",
-  "icon": "icon.png",
+  "icon": "icon.ico",
   "scripts": {
     "test": "mocha test/**/*.test.js"
   },

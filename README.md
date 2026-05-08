@@ -35,7 +35,7 @@ This extension utilizes the [Acorn](https://github.com/acornjs/acorn) library fo
 
 ## Project Information
 
-* **Version**: 1.0.3
+* **Version**: 1.0.4
 * **Publisher**: SahabatSapi
 * **Categories**: Programming Languages, Linters, Static Analysis
 
