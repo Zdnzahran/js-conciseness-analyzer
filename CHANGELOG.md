@@ -26,7 +26,7 @@ Format pencatatan ini didasarkan pada standar [Keep a Changelog](https://keepach
 ### Diperbaiki
 - Menambahkan file `LICENSE` (MIT) yang diwajibkan oleh VS Code Marketplace.
 
-## [1.0.4] - 2026-05-08
+## [1.0.5] - 2026-05-08
 ### Diperbaiki
 - Memperbarui tampilan fitur 1, analisis file tunggal.
-- Menyesuaikan ulang perhitungan Cyclomatic Complexity (CycC)
+- Menyesuaikan ulang perhitungan Cyclomatic Complexity(CycC) & Operator
